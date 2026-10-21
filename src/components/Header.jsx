@@ -1,4 +1,6 @@
 import './Header.css';
+import logoHeader from '../../assets/logo-header.svg'
+import miniCart from '../../assets/mini-cart.svg'
 
 
 const Header = () => {
@@ -8,7 +10,7 @@ const Header = () => {
             <div className="header-main flex align-items-center" >
 
                 <div className="header-logo">
-                    <h1>Digital Store</h1>
+                    <img src={logoHeader} alt="Digital Store" />
                 </div>
 
                 <div className="header-search">
@@ -17,12 +19,12 @@ const Header = () => {
                 </div>
 
                 <div className="header-login flex align-items-center gap-3">
-                    <a href="">Cadastre-se</a>
-                    <button type="button">Entrar</button> 
+                    <a href="" className='link-cadastro'>Cadastre-se</a>
+                    <button type="button" className='btn-login'>Entrar</button> 
                 </div>
 
                 <div className="header-cart">
-                    <i className="pi pi-shopping-cart"></i>
+                    <img src={miniCart} alt="Carrinho de Compras" />
                 </div>
             </div>
 

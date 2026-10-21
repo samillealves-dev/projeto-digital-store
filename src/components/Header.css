@@ -5,6 +5,11 @@
     gap: 30px;
 }
 
+.header-logo img {
+    width: 253px;
+    height: 44px;
+}
+
 .header-search {
     position: relative;
     flex: 1;
@@ -30,6 +35,39 @@
     top: 50%;
     transform: translateY(-50%);
 }
+
+.link-cadastro{ 
+    width: 102px;  
+    opacity: 1;
+    color: #474747;
+
+
+}
+
+.btn-login{
+    width: 114px;
+    height: 40px;
+    background-color: #C92071;
+    color:#FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-family: 'inter', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.75px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header-cart img{
+    width: 24px;
+    height: 24px;
+    opacity: 1;
+
+}
+
+
 
 .nav {
     display: flex;
