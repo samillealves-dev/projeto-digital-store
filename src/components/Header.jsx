@@ -5,18 +5,18 @@ const Header = () => {
     return ( 
 
         <header className="header">
-            <div className="header-main" >
+            <div className="header-main flex align-items-center" >
 
                 <div className="header-logo">
                     <h1>Digital Store</h1>
                 </div>
 
                 <div className="header-search">
-                    <input type="text" className="input pi pi-search" placeholder="pesquisar produto" />
+                    <input type="text" className="input" placeholder="pesquisar produto" />
                     <i className="pi pi-search"></i>
                 </div>
 
-                <div className="header-login">
+                <div className="header-login flex align-items-center gap-3">
                     <a href="">Cadastre-se</a>
                     <button type="button">Entrar</button> 
                 </div>
