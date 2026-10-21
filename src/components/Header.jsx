@@ -1,27 +1,32 @@
+import './Header.css';
+
+
 const Header = () => {
     return ( 
 
-        <header>
-            <div >
-                <div>
+        <header className="header">
+            <div className="header-main" >
+
+                <div className="header-logo">
                     <h1>Digital Store</h1>
                 </div>
 
-                <div >
-                    <input type="text" placeholder="pesquisar produto" />
+                <div className="header-search">
+                    <input type="text" className="input pi pi-search" placeholder="pesquisar produto" />
+                    <i className="pi pi-search"></i>
                 </div>
 
-                <div>
+                <div className="header-login">
                     <a href="">Cadastre-se</a>
                     <button type="button">Entrar</button> 
                 </div>
 
-                <div>
-                    <span>Carrinho</span>
+                <div className="header-cart">
+                    <i className="pi pi-shopping-cart"></i>
                 </div>
             </div>
 
-            <nav>
+            <nav className="nav">
                 <a href="">Home</a>
                 <a href="">Produtos</a>
                 <a href="">Categorias</a>

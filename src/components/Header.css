@@ -1,0 +1,14 @@
+.header-search {
+    position: relative;
+}
+
+.header-search input {
+    padding-right: 40px;
+}
+
+.header-search .pi-search {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
