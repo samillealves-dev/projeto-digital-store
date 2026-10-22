@@ -14,7 +14,7 @@ const Header = () => {
                 </div>
 
                 <div className="header-search">
-                    <input type="text" className="input" placeholder="pesquisar produto" />
+                    <input type="text" className="input" placeholder="Pesquisar produto..." />
                     <i className="pi pi-search"></i>
                 </div>
 
@@ -29,10 +29,10 @@ const Header = () => {
             </div>
 
             <nav className="nav">
-                <a href="">Home</a>
-                <a href="">Produtos</a>
-                <a href="">Categorias</a>
-                <a href="">Meus pedidos</a>
+                <a className='home' href="">Home</a>
+                <a className='menunavegacao' href="">Produtos</a>
+                <a className='menunavegacao' href="">Categorias</a>
+                <a className='menunavegacao' href="">Meus pedidos</a>
             </nav>
         </header>
         
