@@ -9,6 +9,10 @@ const Header = () => {
         <header className="header">
             <div className="header-main flex align-items-center" >
 
+                <button className='header-menu' type='button' aria-label='abrir-menu'>
+                    <i className='pi pi-bars'></i>
+                </button>
+
                 <div className="header-logo">
                     <img src={logoHeader} alt="Digital Store" />
                 </div>
@@ -18,7 +22,7 @@ const Header = () => {
                     <i className="pi pi-search"></i>
                 </div>
 
-                <div className="header-login flex align-items-center gap-3">
+                <div className="header-login align-items-center gap-3">
                     <a href="" className='link-cadastro'>Cadastre-se</a>
                     <button type="button" className='btn-login'>Entrar</button> 
                 </div>
