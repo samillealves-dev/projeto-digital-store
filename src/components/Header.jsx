@@ -1,9 +1,13 @@
+import { useState } from 'react';
 import './Header.css';
 import logoHeader from '../../assets/logo-header.svg'
 import miniCart from '../../assets/mini-cart.svg'
 
 
 const Header = () => {
+
+    const [pesquisaAberta, setPesquisaAberta] = useState(false);
+
     return ( 
 
         <header className="header">
@@ -27,7 +31,12 @@ const Header = () => {
                     <button type="button" className='btn-login'>Entrar</button> 
                 </div>
 
-                <button type='button' className='header-search-mobile' aria-label='Abrir pesquisa'>
+                <button
+                    type='button' 
+                    className='header-search-mobile'
+                    aria-label='Abrir pesquisa' 
+                    onClick={()=> setPesquisaAberta(!pesquisaAberta)}
+                >
                     <i className=' pi pi-search'></i>
                 </button>
 
@@ -35,6 +44,17 @@ const Header = () => {
                     <img src={miniCart} alt="Carrinho de Compras" />
                 </div>
             </div>
+
+            {pesquisaAberta && (
+
+                <div className="header-search-expanded">
+                    <input
+                        type="text"
+                        placeholder="Pesquisar produto..."
+                    />
+                    <i className="pi pi-search"></i>
+                </div>
+            )}
 
             <nav className="nav">
                 <a className='home' href="">Home</a>

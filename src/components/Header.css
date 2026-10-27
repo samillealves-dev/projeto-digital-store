@@ -131,6 +131,24 @@
     display: none;
 }
 
+.header-search-expanded {
+    position: relative;
+    display: none;
+}
+
+.header-search-expanded input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 45px 12px 15px;
+}
+
+.header-search-expanded .pi-search {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 
 @media (max-width: 768px) {
 
@@ -183,6 +201,10 @@
     .header-main {
     justify-content: space-between;
     gap: 20px;
+    }
+    
+    .header-search-expanded {
+    display: block;
     }
 
 } 
