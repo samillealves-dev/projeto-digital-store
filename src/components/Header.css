@@ -127,6 +127,11 @@
 }
 
 
+.header-search-mobile {
+    display: none;
+}
+
+
 @media (max-width: 768px) {
 
     .header-login,
@@ -158,6 +163,32 @@
     color: #1f1f1f;
     }
 
-}
+    .header-search-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    flex-shrink: 0;
+    }
+
+    .header-search-mobile .pi-search {
+    font-size: 20px;
+    }
+
+    .header-main {
+    justify-content: space-between;
+    gap: 20px;
+    }
+
+} 
+
+
+
+
 
 

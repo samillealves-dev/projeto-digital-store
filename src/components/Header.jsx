@@ -27,6 +27,10 @@ const Header = () => {
                     <button type="button" className='btn-login'>Entrar</button> 
                 </div>
 
+                <button type='button' className='header-search-mobile' aria-label='Abrir pesquisa'>
+                    <i className=' pi pi-search'></i>
+                </button>
+
                 <div className="header-cart">
                     <img src={miniCart} alt="Carrinho de Compras" />
                 </div>
