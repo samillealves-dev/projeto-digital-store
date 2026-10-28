@@ -7,13 +7,28 @@ import miniCart from '../../assets/mini-cart.svg'
 const Header = () => {
 
     const [pesquisaAberta, setPesquisaAberta] = useState(false);
+    const [menuAberto, SetMenuAberto] = useState(false)
 
     return ( 
 
         <header className="header">
+
+            {menuAberto && (
+                <div
+                    className="menu-overlay"
+                    onClick={() => setMenuAberto(false)}
+                ></div>
+            )}
+
+            
             <div className="header-main flex align-items-center" >
 
-                <button className='header-menu' type='button' aria-label='abrir-menu'>
+                <button 
+                    className='header-menu' 
+                    type='button' 
+                    aria-label='abrir-menu'
+                    onClick={()=> SetMenuAberto(!menuAberto)}
+                >
                     <i className='pi pi-bars'></i>
                 </button>
 
@@ -56,11 +71,25 @@ const Header = () => {
                 </div>
             )}
 
-            <nav className="nav">
+            <nav className={`nav ${menuAberto ? "nav-aberta" : ""}`}>
+                <div className='nav-links'>
+                <p className='nav-titulo'>Páginas</p>
+
                 <a className='home' href="">Home</a>
                 <a className='menunavegacao' href="">Produtos</a>
                 <a className='menunavegacao' href="">Categorias</a>
                 <a className='menunavegacao' href="">Meus pedidos</a>
+                </div>
+
+                <div className="nav-login">
+                    <button type="button" className="btn-login">
+                        Entrar
+                    </button>
+
+                    <a href="" className="link-cadastro">
+                        Cadastre-se
+                    </a>
+                </div>
             </nav>
         </header>
         
