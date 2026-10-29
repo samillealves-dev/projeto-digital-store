@@ -1,0 +1,46 @@
+.hero-banner {
+    width: 100%;
+    min-height: 681px;
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    padding: 0 max(20px, calc((100% - 1100px) / 2 + 20px));
+    box-sizing: border-box;
+}
+
+.hero-shoe {
+    width: 733.51px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transform: rotate(-19.34deg);
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 510px;
+}
+
+.hero-image {
+    flex: 1;
+    min-width: 0;
+}
+
+.hero-content h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 66px;
+    letter-spacing: 1px;
+    color: #1F1F1F;
+}
+
+.hero-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.75px;
+    color: #F6AA1C;
+    margin: 0 0 20px;
+}
