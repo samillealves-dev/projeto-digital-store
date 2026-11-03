@@ -6,24 +6,37 @@
     align-items: center;
     padding: 0 max(20px, calc((100% - 1100px) / 2 + 20px));
     box-sizing: border-box;
+    position: relative;
 }
+
+
+.hero-ornament {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    top: 78px;
+    right: max(15px, calc((100% - 1440px) / 2 + 15px));
+    opacity: 0.4;
+}
+
 
 .hero-shoe {
     width: 733.51px;
-    max-width: 100%;
+    max-width: none;
     height: auto;
     display: block;
-    transform: rotate(-19.34deg);
+    transform: translate(-35px, -30px) rotate(-19.34deg);
 }
 
 .hero-content {
-    flex: 1;
-    max-width: 510px;
+    flex: 0 0 510px;
+    max-width: 100%;
 }
 
 .hero-image {
     flex: 1;
     min-width: 0;
+    overflow: visible;
 }
 
 .hero-content h1 {
@@ -33,6 +46,7 @@
     line-height: 66px;
     letter-spacing: 1px;
     color: #1F1F1F;
+    margin: 0 0 20px;
 }
 
 .hero-subtitle {
@@ -53,4 +67,103 @@
     line-height: 34px;
     letter-spacing: 0.75px;
     color: #474747;
+    margin: 0 0 40px;
+}
+
+.hero-button {
+    width: 220px;
+    height: 48px;
+    background-color: #C92071;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.75px;
+    color: #F5F5F5;
+    text-align: center;
+}
+
+.hero-fire {
+    font-size: 40px;
+    vertical-align: middle;
+}
+
+.hero-indicators {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.hero-indicators span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #CCCCCC;
+}
+
+.hero-indicators .active {
+    background-color: #C92071;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .hero-banner {
+        flex-direction: column-reverse;
+    }
+
+        .hero-image {
+        flex: none;
+        width: 100%;
+    }
+
+    .hero-shoe {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .hero-content h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    color: #1F1F1F;
+    text-align: center;
+    }
+
+    .hero-subtitle {
+    color: #C92071;
+    text-align: center;
+    }
+
+    .hero-description {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 20px auto 30px;
+    }
+
+    .hero-button {
+    display: block;
+    width: 100%;
+    max-width: 335px;
+    margin: 0 auto;
+    }
+
+    .hero-banner {
+    min-height: 0;
+    padding-bottom: 80px;
+    }
+
+    
 }
