@@ -1,0 +1,129 @@
+.special-offer-content {
+    width: 100%;
+    max-width: 589px;
+}
+
+
+.special-offer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    min-height: 553px;
+    background-color: #FFFFFF;
+}
+
+.special-offer-image {
+    position: relative;
+}
+
+.special-offer-image::before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    position: absolute;
+    width: 466px;
+    height: 466px;
+    border-radius: 50%;
+    background-color: #F0EAFF;
+    z-index: 0;
+}
+
+.special-offer-image img {
+    width: 100%;
+    max-width: 573px;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    transform: translate(-12px, -10px);
+}
+
+
+.special-offer-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.75px;
+    color:  #C92071;
+
+}
+
+.special-offer-content h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 1px;
+    color: #474747;
+}
+
+.special-offer-content p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.75px;
+    color: #474747;
+}
+
+.special-offer-content button {
+    width: 200px;
+    height: 40px;
+    color: #F5F5F5;
+    background-color: #C92071;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .special-offer {
+        flex-direction: column;
+        padding: 30px 20px;
+    box-sizing: border-box;
+    gap: 20px;
+    }
+
+    .special-offer-image {
+    position: relative;
+    width: 100%;
+    max-width: 301px;
+    height: 280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+
+    .special-offer-image img {
+    width: 100%;
+    max-width: 301px;
+    height: auto;
+    display: block;
+    }
+
+    .special-offer-label {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0;
+    }
+
+
+    .special-offer-content {
+    width: 100%;
+    }
+
+    .special-offer-image::before {
+    width: 281px;
+    height: 280px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+
+}

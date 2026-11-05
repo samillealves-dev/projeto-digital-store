@@ -3,6 +3,7 @@ import FeaturedCollections from "../components/FeaturedCollections";
 import HeroBanner from "../components/HeroBanner";
 import "./HomePage.css";
 import TrendingProducts from "../components/TrendingProduct";
+import SpecialOffer from "../components/SpecialOffer";
 
 
 const HomePage = () => {
@@ -15,6 +16,8 @@ const HomePage = () => {
                 <FeaturedCategories/>
                 <TrendingProducts />
             </div>
+
+            <SpecialOffer/>
         </main>
      );
 }

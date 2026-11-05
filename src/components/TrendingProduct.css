@@ -18,3 +18,72 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
 }
+
+.trending-header a {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.75px;
+    color: #C92071;
+    text-decoration: none;
+}
+
+
+.trending-header a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.product-category {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.75px;
+    color: #8F8F8F;
+    margin: 0;
+}
+
+.product-name {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0.75px;
+    color: #474747;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+
+    .trending-header h2,
+    .trending-header a {
+    white-space: nowrap;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .trending-header h2 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.75px;
+    color: #474747;
+    }
+
+    .trending-header a {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.25px;
+    color: #C92071;
+    white-space: nowrap;
+    }
+
+}

@@ -77,7 +77,10 @@ const TrendingProducts = () => {
         <section className="trending-products">
             <div className="trending-header">
                 <h2>Produtos em alta</h2>
-                <a href="/products">Ver todos</a>
+                <a href="/products">
+                    Ver todos
+                    <i className="pi pi-arrow-right"></i>
+                </a>
             </div>
 
             <div className="products-grid">

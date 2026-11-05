@@ -16,8 +16,8 @@ const ProductCard = ({name, category, price, priceDiscount, image, discount}) =>
                 <h3 className="product-name">{name}</h3>
 
                 <div className="product-prices">
-                    <span className="original-price">R$ {price}</span>
-                    <span className="discount-price">R$ {priceDiscount}</span>
+                    <span className="original-price">${price}</span>
+                    <span className="discount-price">${priceDiscount}</span>
                 </div>
             </div>
         </div>
