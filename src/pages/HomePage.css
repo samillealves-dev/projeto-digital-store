@@ -3,7 +3,8 @@
 }
 
 .featured-collections h2,
-.featured-categories h2 {
+.featured-categories h2,
+.trending-products h2 {
     font-family: 'Inter', sans-serif;
     font-size: 24px;
     font-weight: 700;

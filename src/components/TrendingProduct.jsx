@@ -9,56 +9,66 @@ const products = [
         category: "Tênis",
         price: 200,
         priceDiscount: 100,
-        image: "/tenis.png"
+        image: "/tenis.png",
+        discount: "30% OFF"
     },
     {
         id: 2,
         name: "K-Swiss V8 - Masculino",
         category: "Tênis",
         price: 200,
-        priceDiscount: 100
+        priceDiscount: 100,
+        image: "/tenis.png",
+        discount: "30% OFF"
     },
     {
         id: 3,
         name: "K-Swiss V8 - Masculino",
         category: "Tênis",
         price: 200,
-        priceDiscount: 100
+        priceDiscount: 100,
+        image: "/tenis.png"
     },
     {
         id: 4,
         name: "K-Swiss V8 - Masculino",
         category: "Tênis",
         price: 200,
-        priceDiscount: 100
+        priceDiscount: 100,
+        image: "/tenis.png"
     },
     {
         id: 5,
         name: "K-Swiss V8 - Masculino",
         category: "Tênis",
         price: 200,
-        priceDiscount: 100
+        priceDiscount: 100,
+        image: "/tenis.png"
     },
     {
         id: 6,
         name: "K-Swiss V8 - Masculino",
         category: "Tênis",
         price: 200,
-        priceDiscount: 100
+        priceDiscount: 100,
+        image: "/tenis.png"
     },
     {
         id: 7,
         name: "K-Swiss V8 - Masculino",
         category: "Tênis",
         price: 200,
-        priceDiscount: 100
+        priceDiscount: 100,
+        image: "/tenis.png"
     },
     {
         id: 8,
         name: "K-Swiss V8 - Masculino",
         category: "Tênis",
         price: 200,
-        priceDiscount: 100
+        priceDiscount: 100,
+        image: "/tenis.png"
+        
     }
 ];
 
@@ -79,6 +89,7 @@ const TrendingProducts = () => {
                         price={product.price}
                         priceDiscount={product.priceDiscount}
                         image={product.image}
+                        discount={product.discount}
                     />
                 ))}
                 

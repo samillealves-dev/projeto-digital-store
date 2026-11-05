@@ -1,9 +1,12 @@
 import "./ProductCard.css";
 
-const ProductCard = ({name, category, price, priceDiscount, image}) => {
+const ProductCard = ({name, category, price, priceDiscount, image, discount}) => {
     return (
         <div className="product-card">
             <div className="product-image">
+                 {discount && (
+                    <span className="product-discount">{discount}</span>
+                )}
                 {image && <img src={image} alt={name} />}
             </div>
 
