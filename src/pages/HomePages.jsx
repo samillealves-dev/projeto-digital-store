@@ -4,7 +4,7 @@ import HeroBanner from "../components/HeroBanner";
 import "./HomePage.css";
 import TrendingProducts from "../components/TrendingProduct";
 import SpecialOffer from "../components/SpecialOffer";
-import Footer from "../components/Footer";
+
 
 
 const HomePage = () => {
@@ -19,7 +19,7 @@ const HomePage = () => {
             </div>
 
             <SpecialOffer/>
-            <Footer/>
+            
         </main>
      );
 }

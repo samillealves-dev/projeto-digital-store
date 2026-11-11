@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './Header.css';
 import logoHeader from '../../assets/logo-header.svg'
 import miniCart from '../../assets/mini-cart.svg'
+import { Link } from "react-router-dom";
 
 
 const Header = () => {
@@ -75,8 +76,8 @@ const Header = () => {
                 <div className='nav-links'>
                 <p className='nav-titulo'>Páginas</p>
 
-                <a className='home' href="">Home</a>
-                <a className='menunavegacao' href="">Produtos</a>
+                <Link className="home" to="/">Home</Link>
+                <Link className="menunavegacao" to="/produtos">Produtos</Link>
                 <a className='menunavegacao' href="">Categorias</a>
                 <a className='menunavegacao' href="">Meus pedidos</a>
                 </div>
