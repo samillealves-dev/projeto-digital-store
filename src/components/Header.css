@@ -86,13 +86,6 @@
     gap: 30px;
 }
 
-.home{
-    color: #C92071;
-    font-weight: 700;
-    border-bottom: #C92071 2px solid;
-    text-decoration: none;
-    line-height: 24px;
-}
 
 
 
@@ -103,11 +96,16 @@
     letter-spacing: 0.75px; 
     line-height: 28px;  
     font-weight: 400;
-    
-    
-
-
 }
+
+.menunavegacao.active {
+    color: #C92071;
+    font-weight: 700;
+    border-bottom: 2px solid #C92071;
+}
+
+
+
 
 .header-login{
     display: flex;

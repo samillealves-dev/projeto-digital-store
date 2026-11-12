@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './Header.css';
 import logoHeader from '../../assets/logo-header.svg'
 import miniCart from '../../assets/mini-cart.svg'
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 const Header = () => {
@@ -76,8 +76,25 @@ const Header = () => {
                 <div className='nav-links'>
                 <p className='nav-titulo'>Páginas</p>
 
-                <Link className="home" to="/">Home</Link>
-                <Link className="menunavegacao" to="/produtos">Produtos</Link>
+                <NavLink
+                    to="/"
+                    end
+                    className={({ isActive }) =>
+                        isActive ? "menunavegacao active" : "menunavegacao"
+                    }
+                >
+                    Home
+                </NavLink>
+
+                <NavLink
+                    to="/produtos"
+                    className={({ isActive }) =>
+                        isActive ? "menunavegacao active" : "menunavegacao"
+                    }
+                >
+                    Produtos
+                </NavLink>
+                
                 <a className='menunavegacao' href="">Categorias</a>
                 <a className='menunavegacao' href="">Meus pedidos</a>
                 </div>

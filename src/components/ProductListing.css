@@ -5,3 +5,19 @@
     max-width: 900px;
     width: 100%;
 }
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+
+    .product-listing {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        max-width: 100%;
+    }
+
+    .product-listing > :nth-child(n+9) {
+        display: none;
+    }
+
+}

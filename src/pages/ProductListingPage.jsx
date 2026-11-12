@@ -1,9 +1,12 @@
 
+import { useState } from "react";
 import ProductListing from "../components/ProductListing";
 import FilterGroup from "../components/FilterGroup";
 import "./ProductListingPage.css";
 
 const ProductListingPage = () => {
+
+    const [filtrosAbertos, setFiltrosAbertos] = useState(false);
 
     const products = Array.from({ length: 15 }, (_, index) => ({
         id: index + 1,
@@ -19,12 +22,63 @@ const ProductListingPage = () => {
         <main className="listing-page">
             <div className="listing-container">
 
-                <h1>Listagem de Produtos</h1>
+                <div className="listing-top">
+
+                    <h1 className="listing-title">
+                        Resultados para "Tênis" - {products.length} produtos
+                    </h1>
+
+                    <div className="listing-sort">
+                        <label htmlFor="sort-products">
+                            Ordenar por:
+                        </label>
+
+                        <select id="sort-products" defaultValue="">
+                            <option value="" disabled>
+                                Selecione
+                            </option>
+                            <option value="menor">
+                                Menor preço
+                            </option>
+                            <option value="maior">
+                                Maior preço
+                            </option>
+                        </select>
+                    </div>
+
+                    <button
+                        type="button"
+                        className="filter-mobile-button"
+                        onClick={() => setFiltrosAbertos(true)}
+                        aria-label="Abrir filtros"
+                    >
+                        <i className="pi pi-filter"></i>
+                    </button>
+
+                </div>
 
                 <div className="listing-content">
 
-                    <aside className="listing-sidebar">
-                        <h2>Filtrar por</h2>
+                    <aside
+                        className={`listing-sidebar ${
+                            filtrosAbertos ? "filters-open" : ""
+                        }`}
+                    >
+                        <div className="filter-heading">
+
+                            <h2>Filtrar por</h2>
+
+                            <button
+                                type="button"
+                                className="filter-close"
+                                onClick={() => setFiltrosAbertos(false)}
+                                aria-label="Fechar filtros"
+                            >
+                                <i className="pi pi-times"></i>
+                            </button>
+
+                        </div>
+
                         <hr />
 
                         <FilterGroup
@@ -68,6 +122,7 @@ const ProductListingPage = () => {
                                 { text: "Usado", value: "usado" }
                             ]}
                         />
+
                     </aside>
 
                     <section className="listing-results">
@@ -75,6 +130,7 @@ const ProductListingPage = () => {
                     </section>
 
                 </div>
+
             </div>
         </main>
     );
