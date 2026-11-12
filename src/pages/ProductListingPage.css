@@ -1,0 +1,27 @@
+.listing-page {
+    background-color: #F9F8FE;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.listing-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.listing-content {
+    display: grid;
+    grid-template-columns: 308px minmax(0, 1fr);
+    gap: 28px;
+    align-items: start;
+}
+
+.listing-sidebar {
+    width: 100%;
+}
+
+.listing-results {
+    min-width: 0;
+}
