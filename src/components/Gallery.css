@@ -1,0 +1,75 @@
+/* ===== DESKTOP ===== */
+
+.gallery {
+    width: 100%;
+}
+
+.gallery-main {
+    width: 100%;
+    background-color: #E2E3FF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.gallery-main img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.gallery-thumbs {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.gallery-thumb {
+    width: 117px;
+    height: 95px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-thumb img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+
+.gallery-thumb.active {
+    border: 2px solid #C92071;
+}
+
+.gallery-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.gallery-arrow-left {
+    left: 15px;
+}
+
+.gallery-arrow-right {
+    right: 15px;
+}
+
+.gallery-arrow img {
+    width: 24px;
+    height: 24px;
+    display: block;
+}

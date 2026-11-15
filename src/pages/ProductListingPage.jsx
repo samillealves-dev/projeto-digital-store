@@ -15,7 +15,7 @@ const ProductListingPage = () => {
         price: 200,
         priceDiscount: 100,
         image: "/tenis.png",
-        discount: index < 2 ? "30% OFF" : null
+        discount: index < 2 ? "50% OFF" : null
     }));
 
     return (

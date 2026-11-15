@@ -164,6 +164,14 @@
 .nav-login {
     display: none;
 }
+.header-search .search-submit,
+.header-search-expanded .search-submit {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: inherit;
+}
 
 
 @media (max-width: 768px) {

@@ -1,0 +1,33 @@
+.product-options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.product-option {
+    min-width: 46px;
+    height: 46px;
+    padding: 0 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    color: #474747;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.product-option.selected {
+    border: 2px solid #C92071;
+}
+
+.product-option.circle {
+    width: 31px;
+    min-width: 31px;
+    height: 31px;
+    padding: 0;
+}
+
+.product-option.circle.selected {
+    border: 2px solid #C92071;
+}

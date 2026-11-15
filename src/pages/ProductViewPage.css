@@ -1,0 +1,148 @@
+.product-view-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.product-view-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.product-view-content .gallery {
+    flex: 1.4;
+    min-width: 0;
+}
+
+.product-view-content .buy-box {
+    flex: 1;
+    min-width: 0;
+}
+
+
+
+/* ===== PRODUTOS RECOMENDADOS ===== */
+
+.recommended-products {
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+.recommended-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.recommended-header h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #474747;
+    margin: 0;
+}
+
+.recommended-header a {
+    font-size: 18px;
+    color: #C92071;
+    text-decoration: none;
+}
+
+/* Quatro produtos por linha */
+.recommended-products .product-listing {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    width: 100%;
+    max-width: none;
+}
+
+.recommended-products .product-card {
+    width: 100%;
+    min-width: 0;
+}
+
+.recommended-products .product-image {
+    width: 100%;
+    background-color: #F5F5F5;
+    border-radius: 4px;
+}
+/* Fundo das imagens dos produtos recomendados */
+.recommended-products .product-image {
+    background-color: #F5F5F5;
+    border-radius: 4px;
+}
+
+/* ===== BREADCRUMB ===== */
+
+.product-breadcrumb {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: #474747;
+}
+
+.product-breadcrumb strong {
+    font-weight: 600;
+}
+
+/* ===== RESPONSIVIDADE MOBILE ===== */
+
+@media (max-width: 768px) {
+
+    .product-view-page {
+        width: 100%;
+        padding: 20px 16px;
+        box-sizing: border-box;
+    }
+
+    /* Galeria acima das informações do produto */
+    .product-view-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .product-view-content .gallery,
+    .product-view-content .buy-box {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    /* Caminho de navegação */
+    .product-breadcrumb {
+        font-size: 10px;
+        gap: 4px;
+        margin-bottom: 20px;
+    }
+
+    /* Produtos recomendados */
+    .recommended-products {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .recommended-header h2 {
+        font-size: 16px;
+    }
+
+    .recommended-header a {
+        font-size: 14px;
+    }
+
+    .recommended-products .product-listing {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    /* Exibir apenas 2 produtos recomendados no mobile */
+    .recommended-products .product-card-link:nth-child(n+3) {
+        display: none;
+    }
+
+}
