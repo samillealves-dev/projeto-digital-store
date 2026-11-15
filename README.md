@@ -148,9 +148,9 @@ Os produtos e as informações exibidas são demonstrativos. A aplicação não 
 
 ## 🌐 Deploy
 
-A aplicação será publicada na Vercel.
+A aplicação está publicada na Vercel e pode ser acessada pelo link:
 
-**Link do projeto:** será adicionado após a publicação.
+🔗 [Acessar Digital Store](https://digital-store-samille.vercel.app)
 
 ## 👩‍💻 Desenvolvedora
 
